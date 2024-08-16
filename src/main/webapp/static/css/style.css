@@ -6,6 +6,7 @@ body {
     background-color: #f7f7f7;
 }
 
+/*HEADER START*/
 header {
     display: flex;
     flex-direction: row;
@@ -41,6 +42,61 @@ header {
 
     border-left: 1px solid #dee2e6;
 }
+
+.support-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0px 45px;
+    width: 65px;
+}
+
+.support-bar-inner:hover > .support-link {
+    color: black;
+    font-size: 14px;
+    transition: 0.4s ease-in-out;
+}
+
+.support-bar-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.support-link {
+    text-decoration: none;
+    color: #495057;
+    font-size: 12px;
+    font-weight: 200;
+    font-family: "Golos", -apple-system, blinkmacsystemfont, roboto, segoe ui, oxygen, ubuntu, cantarell, fira sans, droid sans, helvetica neue, helvetica, arial, sans-serif;
+    width: 30px;
+    transition: 0.4s ease-in-out;
+}
+
+.header-figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-figure > figcaption {
+    color: #495057;
+    font-size: 12px;
+    font-weight: 200;
+    font-family: "Golos", -apple-system, blinkmacsystemfont, roboto, segoe ui, oxygen, ubuntu, cantarell, fira sans, droid sans, helvetica neue, helvetica, arial, sans-serif;
+    transition: 0.4s ease-in-out;
+}
+
+.header-figure:hover > figcaption {
+    color: black;
+    font-size: 14px;
+    transition: 0.4s ease-in-out;
+}
+/*HEADER END*/
 
 .landing-img-container {
     display: flex;
@@ -98,74 +154,20 @@ header {
     overflow:hidden;
 }
 
-.landing-img-container-inner > img {
+.landing-img-container-inner > a {
     position: relative;
     z-index: 1000;
     transform: translateY(7%);
     transition: .15s ease-in-out;
 }
 
-.landing-img-container-inner:hover > img {
+.landing-img-container-inner:hover > a {
     transform: translateY(-0.3%);
     transition: .15s ease-in-out;
 }
 
 .landing-img-caption-container > ul > li:hover > a {
     color: grey;
-}
-
-.support-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    margin: 0px 45px;
-    width: 65px;
-}
-
-.support-bar-inner:hover > .support-link {
-    color: black;
-    font-size: 14px;
-    transition: 0.4s ease-in-out;
-}
-
-.support-bar-inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.support-link {
-    text-decoration: none;
-    color: #495057;
-    font-size: 12px;
-    font-weight: 200;
-    font-family: "Golos", -apple-system, blinkmacsystemfont, roboto, segoe ui, oxygen, ubuntu, cantarell, fira sans, droid sans, helvetica neue, helvetica, arial, sans-serif;
-    width: 30px;
-    transition: 0.4s ease-in-out;
-}
-
-.header-figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.header-figure > figcaption {
-    color: #495057;
-    font-size: 12px;
-    font-weight: 200;
-    font-family: "Golos", -apple-system, blinkmacsystemfont, roboto, segoe ui, oxygen, ubuntu, cantarell, fira sans, droid sans, helvetica neue, helvetica, arial, sans-serif;
-    transition: 0.4s ease-in-out;
-}
-
-.header-figure:hover > figcaption {
-    color: black;
-    font-size: 14px;
-    transition: 0.4s ease-in-out;
 }
 
 .landing-img-caption-container {
