@@ -6,7 +6,7 @@
 
     <groupId>org.artsiomfilipchick</groupId>
     <artifactId>BookStore</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>war</packaging>
 
     <properties>
@@ -25,6 +25,24 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
+            <version>6.1.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>6.1.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>6.1.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
             <version>6.1.8</version>
         </dependency>
 
@@ -64,5 +82,7 @@
 <!--            <artifactId>hibernate-jpamodelgen</artifactId>-->
 <!--            <version>6.5.2.Final</version>-->
 <!--        </dependency>-->
+
     </dependencies>
+
 </project>

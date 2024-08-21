@@ -1,0 +1,88 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="BookStore:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/BookStore_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="BookStore" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:6.1.8" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:6.1.8" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:6.1.8" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:6.1.8" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:6.1.8" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:6.1.8" />
+          <element id="library" level="project" name="Maven: io.micrometer:micrometer-observation:1.12.6" />
+          <element id="library" level="project" name="Maven: io.micrometer:micrometer-commons:1.12.6" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:6.1.8" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:6.1.8" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:6.1.8" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:6.1.8" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:6.1.8" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:6.1.8" />
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:42.6.0" />
+          <element id="library" level="project" name="Maven: org.checkerframework:checker-qual:3.31.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven.plugins:maven-war-plugin:3.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-archiver:3.6.0" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-io:3.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven.shared:maven-shared-utils:3.4.2" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.13.0" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-archiver:4.7.1" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-compress:1.23.0" />
+          <element id="library" level="project" name="Maven: org.iq80.snappy:snappy:0.4" />
+          <element id="library" level="project" name="Maven: org.tukaani:xz:1.9" />
+          <element id="library" level="project" name="Maven: com.github.luben:zstd-jni:1.5.5-2" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-interpolation:1.26" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-utils:3.5.1" />
+          <element id="library" level="project" name="Maven: org.apache.maven.shared:maven-filtering:3.3.1" />
+          <element id="library" level="project" name="Maven: org.sonatype.plexus:plexus-build-api:0.0.7" />
+          <element id="library" level="project" name="Maven: org.apache.maven.shared:maven-mapping:3.0.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-core:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-model:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-settings:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-settings-builder:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-repository-metadata:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-api:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-model-builder:3.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-aether-provider:3.0" />
+          <element id="library" level="project" name="Maven: org.sonatype.aether:aether-impl:1.7" />
+          <element id="library" level="project" name="Maven: org.sonatype.aether:aether-spi:1.7" />
+          <element id="library" level="project" name="Maven: org.sonatype.aether:aether-api:1.7" />
+          <element id="library" level="project" name="Maven: org.sonatype.aether:aether-util:1.7" />
+          <element id="library" level="project" name="Maven: org.sonatype.sisu:sisu-inject-plexus:1.4.2" />
+          <element id="library" level="project" name="Maven: org.sonatype.sisu:sisu-inject-bean:1.4.2" />
+          <element id="library" level="project" name="Maven: org.sonatype.sisu:sisu-guice:noaop:2.1.7" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-classworlds:2.2.3" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" />
+          <element id="library" level="project" name="Maven: org.sonatype.plexus:plexus-sec-dispatcher:1.3" />
+          <element id="library" level="project" name="Maven: org.sonatype.plexus:plexus-cipher:1.4" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-simple:2.0.0" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:2.0.0" />
+          <element id="library" level="project" name="Maven: org.hibernate.orm:hibernate-core:6.5.2.Final" />
+          <element id="library" level="project" name="Maven: jakarta.persistence:jakarta.persistence-api:3.1.0" />
+          <element id="library" level="project" name="Maven: jakarta.transaction:jakarta.transaction-api:2.0.1" />
+          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.5.0.Final" />
+          <element id="library" level="project" name="Maven: org.hibernate.common:hibernate-commons-annotations:6.0.6.Final" />
+          <element id="library" level="project" name="Maven: io.smallrye:jandex:3.1.2" />
+          <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.5.1" />
+          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.14.15" />
+          <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:4.0.0" />
+          <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:2.1.0" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-runtime:4.0.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:jaxb-core:4.0.2" />
+          <element id="library" level="project" name="Maven: org.eclipse.angus:angus-activation:2.0.0" />
+          <element id="library" level="project" name="Maven: org.glassfish.jaxb:txw2:4.0.2" />
+          <element id="library" level="project" name="Maven: com.sun.istack:istack-commons-runtime:4.1.1" />
+          <element id="library" level="project" name="Maven: jakarta.inject:jakarta.inject-api:2.0.1" />
+          <element id="library" level="project" name="Maven: org.antlr:antlr4-runtime:4.13.0" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="BookStore/web/Web" />
+      <element id="javaee-facet-resources" facet="BookStore/web/Web2" />
+      <element id="javaee-facet-resources" facet="BookStore/web/Web3" />
+    </root>
+  </artifact>
+</component>

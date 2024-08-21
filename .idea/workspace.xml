@@ -10,16 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3f5347-ea37-464a-ae97-102124e1aa8a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BookStore_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/af/DispatcherServletInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/771eb901-f604-43e0-b5df-764923517889.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/771eb901-f604-43e0-b5df-764923517889.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/771eb901-f604-43e0-b5df-764923517889/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/771eb901-f604-43e0-b5df-764923517889/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/af/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/ApplicationContextConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/dao/AuthorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/dao/AuthorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/entity/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/ApplicationServletConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/ApplicationServletConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/WebAppInitializer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,37 +56,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ApplicationRunner.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.BookStore [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.BookStore [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.BookStore [deploy].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.BookStore [org.apache.maven.plugins:maven-war-plugin:3.4.0:exploded].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.BookStore [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.BookStore [verify].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.BookStoreLocalServer.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat Server.Tomcat 10.1.11.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/artem/IdeaProjects/BookStore/src/main/webapp/static/images/common&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ApplicationRunner.executor": "Run",
+    "Maven.BookStore [clean].executor": "Run",
+    "Maven.BookStore [compile].executor": "Run",
+    "Maven.BookStore [deploy].executor": "Run",
+    "Maven.BookStore [org.apache.maven.plugins:maven-deploy-plugin:3.1.1:deploy].executor": "Run",
+    "Maven.BookStore [org.apache.maven.plugins:maven-war-plugin:3.4.0:exploded].executor": "Run",
+    "Maven.BookStore [package].executor": "Run",
+    "Maven.BookStore [verify].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.BookStoreLocalServer.executor": "Run",
+    "Tomcat Server.Tomcat 10.1.11.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/artem/IdeaProjects/BookStore/src/main/webapp/static/images/common",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.af" />
@@ -130,7 +131,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="1639c5b5-9fcb-4cf7-80ed-b68fb1fa71c6" />
+        <option name="BASE_DIRECTORY_NAME" value="095e849f-583f-4457-a1a6-122e5ee6c427" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -138,7 +139,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54548" />
+        <option name="DEBUG_PORT" value="50357" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -231,11 +232,20 @@
       <workItem from="1723213819178" duration="17111000" />
       <workItem from="1723445390339" duration="11864000" />
       <workItem from="1723706328381" duration="9380000" />
-      <workItem from="1723715931132" duration="26499000" />
+      <workItem from="1723715931132" duration="31419000" />
+      <workItem from="1724138365776" duration="652000" />
+      <workItem from="1724141918312" duration="235000" />
+      <workItem from="1724142203614" duration="96000" />
+      <workItem from="1724161208877" duration="2867000" />
+      <workItem from="1724223108453" duration="12246000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

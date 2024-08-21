@@ -8,6 +8,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.AvailableSettings;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 
 @Configuration
@@ -15,7 +16,8 @@ import org.springframework.context.annotation.*;
         @PropertySource("file:///Users/artem/IdeaProjects/BookStore/src/main/resources/application.txt"),
         @PropertySource("file:///Users/artem/IdeaProjects/BookStore/src/main/resources/application2.txt")
 })
-@ComponentScan
+@ComponentScan(basePackages = {"com.af.*"})
+@EnableWebSecurity
 public class ApplicationContextConfig {
     static {
         try {
