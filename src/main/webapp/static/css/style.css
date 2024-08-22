@@ -204,7 +204,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: url("/BookStore_war_exploded/static/images/landing-bg-part-img.png");
+    background: url("/static/images/landing-bg-part-img.png");
     height: 464px;
     width: 1394px;
 }

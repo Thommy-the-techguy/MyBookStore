@@ -1,19 +1,11 @@
 package com.af;
 
-import com.af.dao.AuthorDao;
-import com.af.entity.Author;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.*;
-import java.util.List;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class ApplicationRunner {
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationContextConfig.class);
-
-        AuthorDao authorRepo = context.getBean(AuthorDao.class);
-        List<Author> authors = authorRepo.getAuthors();
-        authors.forEach(System.out::println);
-
-        System.out.println(authorRepo.getAuthorById(1));
+        new SpringApplication(ApplicationRunner.class).run(args);
     }
 }

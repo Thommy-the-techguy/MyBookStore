@@ -1,6 +1,9 @@
 package com.af;
 
-import com.af.dao.UserDao;
+import com.af.dao.UserRepo;
+import com.af.entity.User;
+import com.af.enums.Role;
+import jakarta.servlet.DispatcherType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,15 +12,16 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
-    private final UserDao userDao;
+    private final UserRepo userRepo;
 
-    public SecurityConfig(@Autowired UserDao userDao) {
-        this.userDao = userDao;
+    public SecurityConfig(@Autowired UserRepo userRepo) {
+        this.userRepo = userRepo;
     }
 
     @Bean
@@ -26,15 +30,35 @@ public class SecurityConfig {
     }
 
     @Bean
-    public UserDetailsService userDetailsService() {
-        return userDao::findUserByUsername;
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        return http.authorizeHttpRequests(httpRequestCustomizer -> {
+            httpRequestCustomizer
+                    .requestMatchers("/", "/register", "/static/**")
+                    .permitAll()
+                    .requestMatchers("/books**")
+                    .hasRole("USER")
+                    .dispatcherTypeMatchers(DispatcherType.FORWARD)
+                    .permitAll();
+        }).formLogin(loginCustomizer -> {
+            loginCustomizer
+                    .loginPage("/login")
+                    .loginProcessingUrl("/login")
+                    .usernameParameter("username")
+                    .passwordParameter("password")
+//                    .successForwardUrl("/")
+                    .permitAll();
+        }).logout(logoutCustomizer -> {
+            logoutCustomizer
+                    .logoutUrl("/logout")
+                    .logoutSuccessUrl("/")
+                    .permitAll();
+        }).build();
     }
 
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        return http.authorizeHttpRequests(httpRequestCustomizer -> {
-            httpRequestCustomizer.requestMatchers("/", "/static/**", "/login", "/register").permitAll()
-                    .requestMatchers("/books/**").hasRole("USER");
-        }).build();
+    public UserDetailsService userDetailsService() {
+        InMemoryUserDetailsManager userDetailsService = new InMemoryUserDetailsManager();
+        userDetailsService.createUser(new User("user", "password", Role.USER));
+        return userDetailsService;
     }
 }
