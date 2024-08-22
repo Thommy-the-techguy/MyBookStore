@@ -45,7 +45,7 @@ public class SecurityConfig {
                     .loginProcessingUrl("/login")
                     .usernameParameter("username")
                     .passwordParameter("password")
-//                    .successForwardUrl("/")
+                    .successForwardUrl("/")
                     .permitAll();
         }).logout(logoutCustomizer -> {
             logoutCustomizer
