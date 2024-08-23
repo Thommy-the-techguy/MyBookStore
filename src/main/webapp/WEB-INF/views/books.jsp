@@ -29,10 +29,21 @@
             </div>
         </div>
         <div class="header-second-half">
-            <figure class="header-figure">
-                <img src="${pageContext.request.contextPath}/static/images/person-login.png" height="24" width="24">
-                <figcaption>Войти</figcaption>
-            </figure>
+            <% if (request.isUserInRole("USER")) { %>
+            <a class="login-link" href="${pageContext.request.contextPath}/logout">
+                <figure class="header-figure">
+                    <img src="${pageContext.request.contextPath}/static/images/common/exit.png" height="24" width="24">
+                    <figcaption>Выйти</figcaption>
+                </figure>
+            </a>
+            <% } else { %>
+            <a class="login-link" href="${pageContext.request.contextPath}/login">
+                <figure class="header-figure">
+                    <img src="${pageContext.request.contextPath}/static/images/person-login.png" height="24" width="24">
+                    <figcaption>Войти</figcaption>
+                </figure>
+            </a>
+            <% } %>
             <figure class="header-figure">
                 <img src="${pageContext.request.contextPath}/static/images/shopping-cart.png" height="24" width="24">
                 <figcaption>Корзина</figcaption>

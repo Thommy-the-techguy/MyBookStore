@@ -10,16 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3f5347-ea37-464a-ae97-102124e1aa8a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/controller/AuthorizationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/dao/AuthorRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/dao/AuthorRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/dao/BookRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/dao/BookRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/dao/CategoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/dao/CategoryRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/dao/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/dao/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,11 +95,11 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/static/images/common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/static/images/common" />
       <recent name="$PROJECT_DIR$/src/main/webapp/static/images/logo" />
       <recent name="$PROJECT_DIR$/src/main/webapp/static/images/bestsellers" />
       <recent name="$PROJECT_DIR$/src/main/webapp/static/images" />
       <recent name="$PROJECT_DIR$/src/main/webapp/static/css" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -264,7 +255,7 @@
       <workItem from="1724245586586" duration="3890000" />
       <workItem from="1724249594505" duration="7640000" />
       <workItem from="1724315254786" duration="9858000" />
-      <workItem from="1724398462257" duration="7762000" />
+      <workItem from="1724398462257" duration="9281000" />
     </task>
     <servers />
   </component>
