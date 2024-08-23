@@ -10,7 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3f5347-ea37-464a-ae97-102124e1aa8a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/af/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/controller/AuthorizationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/dao/AuthorRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/dao/AuthorRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/dao/BookRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/dao/BookRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/dao/CategoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/dao/CategoryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/dao/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/dao/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +30,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="com.intellij.jpb.JpaEntity" />
+        <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -78,7 +87,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -255,6 +264,7 @@
       <workItem from="1724245586586" duration="3890000" />
       <workItem from="1724249594505" duration="7640000" />
       <workItem from="1724315254786" duration="9858000" />
+      <workItem from="1724398462257" duration="7762000" />
     </task>
     <servers />
   </component>

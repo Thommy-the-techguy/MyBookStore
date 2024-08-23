@@ -23,14 +23,18 @@
             </div>
         </div>
         <div class="header-second-half">
-            <figure class="header-figure">
-                <img src="${pageContext.request.contextPath}/static/images/person-login.png" height="24" width="24">
-                <figcaption>Войти</figcaption>
-            </figure>
-            <figure class="header-figure">
-                <img src="${pageContext.request.contextPath}/static/images/shopping-cart.png" height="24" width="24">
-                <figcaption>Корзина</figcaption>
-            </figure>
+            <a class="login-link" href="${pageContext.request.contextPath}/login">
+                <figure class="header-figure">
+                    <img src="${pageContext.request.contextPath}/static/images/person-login.png" height="24" width="24">
+                    <figcaption>Войти</figcaption>
+                </figure>
+            </a>
+            <a class="cart-link" href="">
+                <figure class="header-figure">
+                    <img src="${pageContext.request.contextPath}/static/images/shopping-cart.png" height="24" width="24">
+                    <figcaption>Корзина</figcaption>
+                </figure>
+            </a>
         </div>
     </header>
     <main>
