@@ -10,7 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3f5347-ea37-464a-ae97-102124e1aa8a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771eb901-f604-43e0-b5df-764923517889.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/771eb901-f604-43e0-b5df-764923517889.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771eb901-f604-43e0-b5df-764923517889/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/771eb901-f604-43e0-b5df-764923517889/storage_v2/_src_/database/book_store.CwROnQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/af/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/af/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +34,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="com.intellij.jpb.JpaEntity" />
-        <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -232,6 +245,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -255,7 +276,13 @@
       <workItem from="1724245586586" duration="3890000" />
       <workItem from="1724249594505" duration="7640000" />
       <workItem from="1724315254786" duration="9858000" />
-      <workItem from="1724398462257" duration="9281000" />
+      <workItem from="1724398462257" duration="20103000" />
+      <workItem from="1724790061324" duration="22000" />
+      <workItem from="1724790094261" duration="7000" />
+      <workItem from="1724790114173" duration="4000" />
+      <workItem from="1724836775070" duration="59000" />
+      <workItem from="1724920377128" duration="5078000" />
+      <workItem from="1724931016384" duration="3257000" />
     </task>
     <servers />
   </component>

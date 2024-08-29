@@ -30,24 +30,26 @@
         </div>
         <div class="header-second-half">
             <% if (request.isUserInRole("USER")) { %>
-            <a class="login-link" href="${pageContext.request.contextPath}/logout">
-                <figure class="header-figure">
-                    <img src="${pageContext.request.contextPath}/static/images/common/exit.png" height="24" width="24">
-                    <figcaption>Выйти</figcaption>
-                </figure>
-            </a>
+                <a class="login-link" href="${pageContext.request.contextPath}/logout">
+                    <figure class="header-figure">
+                        <img src="${pageContext.request.contextPath}/static/images/common/exit.png" height="24" width="24">
+                        <figcaption>Выйти</figcaption>
+                    </figure>
+                </a>
             <% } else { %>
-            <a class="login-link" href="${pageContext.request.contextPath}/login">
+                <a class="login-link" href="${pageContext.request.contextPath}/login">
+                    <figure class="header-figure">
+                        <img src="${pageContext.request.contextPath}/static/images/person-login.png" height="24" width="24">
+                        <figcaption>Войти</figcaption>
+                    </figure>
+                </a>
+            <% } %>
+            <a class="shopping-cart-link" href="${pageContext.request.contextPath}/cart">
                 <figure class="header-figure">
-                    <img src="${pageContext.request.contextPath}/static/images/person-login.png" height="24" width="24">
-                    <figcaption>Войти</figcaption>
+                    <img src="${pageContext.request.contextPath}/static/images/shopping-cart.png" height="24" width="24">
+                    <figcaption>Корзина</figcaption>
                 </figure>
             </a>
-            <% } %>
-            <figure class="header-figure">
-                <img src="${pageContext.request.contextPath}/static/images/shopping-cart.png" height="24" width="24">
-                <figcaption>Корзина</figcaption>
-            </figure>
         </div>
     </header>
     <div class="header-and-main-divisor">
@@ -146,7 +148,7 @@
                                 </div>
                             </div>
                             <div class="product-card__footer">
-                                <form method="post" action="${pageContext.request.contextPath}/books/bestsellers">
+                                <form method="post" action="${pageContext.request.contextPath}/books?<%= request.getQueryString() %>">
                                     <button type="submit">В корзину</button>
                                 </form>
                             </div>
@@ -155,5 +157,8 @@
             <% } %>
         </div>
     </main>
+    <h1><%=request.getParameter("category")%></h1>
+    <h1><%=request.getParameter("author")%></h1>
+    <h1><%=request.getParameter("year")%></h1>
 </body>
 </html>

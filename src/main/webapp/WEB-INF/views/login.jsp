@@ -23,7 +23,7 @@
             <form:input path="password" id="password" type="password"/>
         </div>
         <div>
-            <button type="submit">Login</button>
+            <button type="submit">Войти</button>
         </div>
     </form:form>
     <div>

@@ -38,7 +38,7 @@
                     </figure>
                 </a>
             <% } %>
-            <a class="cart-link" href="">
+            <a class="shopping-cart-link" href="${pageContext.request.contextPath}/cart">
                 <figure class="header-figure">
                     <img src="${pageContext.request.contextPath}/static/images/shopping-cart.png" height="24" width="24">
                     <figcaption>Корзина</figcaption>

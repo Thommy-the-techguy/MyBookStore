@@ -37,7 +37,7 @@ public class SecurityConfig {
             httpRequestCustomizer
                     .requestMatchers("/", "/login**", "/register**", "/static/**")
                     .permitAll()
-                    .requestMatchers("/books**")
+                    .requestMatchers("/books**", "/cart**")
                     .hasRole("USER")
                     .dispatcherTypeMatchers(DispatcherType.FORWARD)
                     .permitAll()

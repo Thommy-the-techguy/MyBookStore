@@ -27,6 +27,8 @@ public class Book {
 //    private List<Category> categories;
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "book")
     private List<BookCategory> bookCategories;
+    @OneToMany(mappedBy = "book")
+    private List<Cart> cart;
 
 
     protected Book() {

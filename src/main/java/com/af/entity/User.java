@@ -20,6 +20,8 @@ public class User implements UserDetails {
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
+    private List<Cart> cart;
 
     public User() {}
 
@@ -44,6 +46,10 @@ public class User implements UserDetails {
 
     public void setRole(Role role) {
         this.role = role;
+    }
+
+    public List<Cart> getCartList() {
+        return this.cart;
     }
 
 
