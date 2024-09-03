@@ -20,7 +20,7 @@ public class User implements UserDetails {
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
-    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.REMOVE, CascadeType.REFRESH})
     private List<Cart> cart;
 
     public User() {}
@@ -34,6 +34,10 @@ public class User implements UserDetails {
         this.username = username;
         this.password = password;
         this.role = role;
+    }
+
+    public int getUserId() {
+        return userId;
     }
 
     public void setUsername(String username) {

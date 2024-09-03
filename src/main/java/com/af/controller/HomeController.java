@@ -2,11 +2,12 @@ package com.af.controller;
 
 import com.af.dao.AuthorRepo;
 import com.af.dao.BookRepo;
+import com.af.dao.CartRepo;
 import com.af.dao.CategoryRepo;
+import com.af.dao.UserRepo;
 import com.af.entity.*;
-import jakarta.servlet.ServletRequest;
+import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -23,14 +24,19 @@ public class HomeController {
     private final AuthorRepo authorRepo;
     private final BookRepo bookRepo;
     private final CategoryRepo categoryRepo;
-    private final ServletRequest httpServletRequest;
+    private final CartRepo cartRepo;
+    private final UserRepo userRepo;
+    private final EntityManager entityManager;
 
     @Autowired
-    public HomeController(AuthorRepo authorRepo, BookRepo bookRepo, CategoryRepo categoryRepo, @Qualifier("httpServletRequest") ServletRequest httpServletRequest) {
+    public HomeController(AuthorRepo authorRepo, BookRepo bookRepo, CategoryRepo categoryRepo, CartRepo cartRepo,
+                          UserRepo userRepo, EntityManager entityManager) {
         this.authorRepo = authorRepo;
         this.bookRepo = bookRepo;
+        this.cartRepo = cartRepo;
+        this.userRepo = userRepo;
         this.categoryRepo = categoryRepo;
-        this.httpServletRequest = httpServletRequest;
+        this.entityManager = entityManager;
     }
 
     @GetMapping("/")
@@ -39,10 +45,23 @@ public class HomeController {
     }
 
     @GetMapping("/cart")
-    public String getShoppingCartPage(Model model) {
+    public String getShoppingCartPage(Model model,
+                                      @RequestParam(name = "paymentComplete", required = false) boolean paymentComplete) {
         model.addAttribute("currentUser", getCurrentUser());
 
+        if (paymentComplete) {
+            return "shopping-cart2";
+        }
+
         return "shopping-cart";
+    }
+
+    @PostMapping("/cart")
+    public String performPayment() {
+        getCurrentUser().getCartList().clear();
+        cartRepo.deleteAllByUserId(getCurrentUser().getUserId());
+
+        return "redirect:/cart?paymentComplete=true";
     }
 
     @GetMapping("/books")
@@ -57,13 +76,43 @@ public class HomeController {
     }
 
     @PostMapping("/books")
-    public void addToCart(Model model,
+    public String addToCart(Model model,
                           @RequestParam(name = "category") String category,
                           @RequestParam(name = "author", required = false) List<Long> authorIds,
-                          @RequestParam(name = "year", required = false) List<Integer> yearIds) {
+                          @RequestParam(name = "year", required = false) List<Integer> yearIds,
+                          @RequestParam(name = "bookId") long bookId) {
 
         model.asMap().put("books", getBooksWithParams(category, authorIds, yearIds));
-        System.out.println("added to cart"); //TODO: add to cart functionality, connect to user
+
+        Optional<Book> maybeBook = bookRepo.findById(bookId);
+
+        if (maybeBook.isPresent()) {
+            Book book = maybeBook.get();
+            Cart cart = new Cart(getCurrentUser(), book);
+
+            cartRepo.save(cart);
+            getCurrentUser().getCartList().add(cart);
+        }
+
+        return returnRedirectURL(category, authorIds, yearIds);
+    }
+
+    private String returnRedirectURL(String category, List<Long> authorIds, List<Integer> yearIds) {
+        StringBuilder sb = new StringBuilder(String.format("redirect:/books?category=%s", category));
+
+        if (authorIds != null) {
+            for (long authorId : authorIds) {
+                sb.append("&authorId=").append(authorId);
+            }
+        }
+
+        if (yearIds != null) {
+            for (int yearId : yearIds) {
+                sb.append("&yearId=").append(yearId);
+            }
+        }
+
+        return sb.toString();
     }
 
     private List<Book> getBooksWithParams(String category, List<Long> authorIds, List<Integer> yearIds) {
@@ -79,7 +128,7 @@ public class HomeController {
     }
 
     @ModelAttribute("authors")
-    private List<Author> getAllAuthors() {
+    public List<Author> getAllAuthors() {
         return authorRepo.getAll();
     }
 

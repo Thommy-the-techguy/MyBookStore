@@ -9,7 +9,7 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cart_id")
     private long cartId;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.REFRESH)
     @JoinColumn(name = "user_id")
     private User user;
     @ManyToOne

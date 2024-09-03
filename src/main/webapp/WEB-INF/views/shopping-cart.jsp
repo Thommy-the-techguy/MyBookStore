@@ -1,5 +1,6 @@
 <%@ page import="com.af.entity.User" %>
 <%@ page import="com.af.entity.Cart" %>
+<%@ page import="com.af.entity.Book" %>
 <%@ page import="java.util.List" %>
 <%--
   Created by IntelliJ IDEA.
@@ -14,16 +15,32 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Shopping cart</h1>
     <% User currentUser = (User) request.getAttribute("currentUser"); %>
-    <h1><%= currentUser.getUsername() %></h1>
+    <h1>Ваша корзина, <%= currentUser.getUsername() %></h1>
     <%
         List<Cart> currentUserCartList = currentUser.getCartList();
         if (currentUserCartList != null) {
     %>
+            <% float total = 0f; %>
             <% for (Cart cart : currentUser.getCartList()) { %>
-                <h5><%= cart.getBook().getBookName() %></h5>
+                <% Book book = cart.getBook(); %>
+                <div>
+                    <div>
+                        <img src="<%= book.getImagePath() %>" alt="<%= book.getBookName() %> image" height="200" width="136">
+                        <div>
+                            <span><%= book.getBookName() %></span>
+                            <span><%= book.getPrice() %>$</span>
+                        </div>
+                    </div>
+                </div>
+                <% total += book.getPrice(); %>
             <% } %>
+
+            <h3>Общая сумма: <%= total %>$</h3>
     <%  } %>
+
+    <form action="${pageContext.request.contextPath}/cart?paymentComplete=true" method="post">
+        <button type="submit">Оплатить</button>
+    </form>
 </body>
 </html>

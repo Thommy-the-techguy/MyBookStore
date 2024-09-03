@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="book_store@localhost">
-  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.52">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.53">
     <root id="1">
       <DateStyle>mdy</DateStyle>
       <IntrospectionStateNumber>2080</IntrospectionStateNumber>
@@ -4248,51 +4248,51 @@ false Zulu
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
     <sequence id="268" parent="267" name="author_author_id_seq">
-      <DasType>bigint|0s</DasType>
       <ObjectId>18258</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>2021</StateNumber>
+      <StoredType>bigint|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="269" parent="267" name="book_book_id_seq">
-      <DasType>bigint|0s</DasType>
       <ObjectId>18266</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>2026</StateNumber>
+      <StoredType>bigint|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="270" parent="267" name="book_category_mapping_record_id_seq">
-      <DasType>bigint|0s</DasType>
       <ObjectId>18270</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>2031</StateNumber>
+      <StoredType>bigint|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="271" parent="267" name="cart_cart_id_seq">
-      <DasType>integer|0s</DasType>
       <ObjectId>18274</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>2036</StateNumber>
+      <StoredType>integer|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="272" parent="267" name="category_category_id_seq">
-      <DasType>integer|0s</DasType>
       <ObjectId>18278</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>2041</StateNumber>
+      <StoredType>integer|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="273" parent="267" name="table_name_user_id_seq">
-      <DasType>integer|0s</DasType>
       <ObjectId>18285</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>2046</StateNumber>
+      <StoredType>integer|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <table id="274" parent="267" name="author">
@@ -4332,26 +4332,26 @@ false Zulu
       <OwnerName>postgres</OwnerName>
     </table>
     <column id="280" parent="274" name="author_id">
-      <DasType>bigint|0s</DasType>
       <DefaultExpression>nextval(&apos;author_author_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>2049</StateNumber>
+      <StoredType>bigint|0s</StoredType>
       <SequenceId>18258</SequenceId>
       <TypeId>20</TypeId>
     </column>
     <column id="281" parent="274" name="first_name">
-      <DasType>varchar(64)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>2019</StateNumber>
+      <StoredType>varchar(64)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="282" parent="274" name="last_name">
-      <DasType>varchar(64)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>2019</StateNumber>
+      <StoredType>varchar(64)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <index id="283" parent="274" name="author_pkey">
@@ -4371,61 +4371,61 @@ false Zulu
       <UnderlyingIndexId>18292</UnderlyingIndexId>
     </key>
     <column id="285" parent="275" name="book_id">
-      <DasType>bigint|0s</DasType>
       <DefaultExpression>nextval(&apos;book_book_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>2050</StateNumber>
+      <StoredType>bigint|0s</StoredType>
       <SequenceId>18266</SequenceId>
       <TypeId>20</TypeId>
     </column>
     <column id="286" parent="275" name="book_name">
-      <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>2024</StateNumber>
+      <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
     <column id="287" parent="275" name="authors_id">
-      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>2024</StateNumber>
+      <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
     <column id="288" parent="275" name="description">
-      <DasType>text|0s</DasType>
       <Position>4</Position>
       <StateNumber>2024</StateNumber>
+      <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
     <column id="289" parent="275" name="image_path">
-      <DasType>text|0s</DasType>
       <Position>5</Position>
       <StateNumber>2024</StateNumber>
+      <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
     <column id="290" parent="275" name="price">
-      <DasType>real|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>2024</StateNumber>
+      <StoredType>real|0s</StoredType>
       <TypeId>700</TypeId>
     </column>
     <column id="291" parent="275" name="rating">
-      <DasType>real|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>7</Position>
       <StateNumber>2024</StateNumber>
+      <StoredType>real|0s</StoredType>
       <TypeId>700</TypeId>
     </column>
     <column id="292" parent="275" name="year">
-      <DasType>smallint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
       <StateNumber>2024</StateNumber>
+      <StoredType>smallint|0s</StoredType>
       <TypeId>21</TypeId>
     </column>
     <foreign-key id="293" parent="275" name="book_authors_author_id_fk">
@@ -4452,26 +4452,26 @@ false Zulu
       <UnderlyingIndexId>18298</UnderlyingIndexId>
     </key>
     <column id="296" parent="276" name="record_id">
-      <DasType>bigint|0s</DasType>
       <DefaultExpression>nextval(&apos;book_category_mapping_record_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>2051</StateNumber>
+      <StoredType>bigint|0s</StoredType>
       <SequenceId>18270</SequenceId>
       <TypeId>20</TypeId>
     </column>
     <column id="297" parent="276" name="book_id">
-      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>2029</StateNumber>
+      <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
     <column id="298" parent="276" name="category_id">
-      <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>2029</StateNumber>
+      <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
     <foreign-key id="299" parent="276" name="book_category_mapping_book_id_fkey">
@@ -4522,26 +4522,26 @@ category_id</ColNames>
       <UnderlyingIndexId>18294</UnderlyingIndexId>
     </key>
     <column id="305" parent="277" name="cart_id">
-      <DasType>bigint|0s</DasType>
       <DefaultExpression>nextval(&apos;cart_cart_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>2052</StateNumber>
+      <StoredType>bigint|0s</StoredType>
       <SequenceId>18274</SequenceId>
       <TypeId>20</TypeId>
     </column>
     <column id="306" parent="277" name="user_id">
-      <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>2034</StateNumber>
+      <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
     <column id="307" parent="277" name="book_id">
-      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>2034</StateNumber>
+      <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
     <index id="308" parent="277" name="cart_pkey">
@@ -4561,19 +4561,19 @@ category_id</ColNames>
       <UnderlyingIndexId>18300</UnderlyingIndexId>
     </key>
     <column id="310" parent="278" name="category_id">
-      <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;category_category_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>2053</StateNumber>
+      <StoredType>integer|0s</StoredType>
       <SequenceId>18278</SequenceId>
       <TypeId>23</TypeId>
     </column>
     <column id="311" parent="278" name="category_name">
-      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>2039</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <index id="312" parent="278" name="category_pkey">
@@ -4593,34 +4593,34 @@ category_id</ColNames>
       <UnderlyingIndexId>18302</UnderlyingIndexId>
     </key>
     <column id="314" parent="279" name="user_id">
-      <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;table_name_user_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>2054</StateNumber>
+      <StoredType>integer|0s</StoredType>
       <SequenceId>18285</SequenceId>
       <TypeId>23</TypeId>
     </column>
     <column id="315" parent="279" name="username">
-      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>2044</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="316" parent="279" name="password">
-      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>2044</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="317" parent="279" name="role">
-      <DasType>varchar(50)|0s</DasType>
       <DefaultExpression>&apos;USER&apos;::character varying</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>2044</StateNumber>
+      <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <index id="318" parent="279" name="table_name_pkey">

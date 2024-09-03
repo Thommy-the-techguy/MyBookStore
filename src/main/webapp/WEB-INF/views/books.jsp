@@ -149,6 +149,7 @@
                             </div>
                             <div class="product-card__footer">
                                 <form method="post" action="${pageContext.request.contextPath}/books?<%= request.getQueryString() %>">
+                                    <input type="hidden" name="bookId" value="<%= book.getBookId() %>">
                                     <button type="submit">В корзину</button>
                                 </form>
                             </div>
