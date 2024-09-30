@@ -30,4 +30,7 @@ public interface BookRepo extends CrudRepository<Book, Long> {
     List<Book> getBooksByCategoryAndAuthorAndBookYear(@Param("categoryId") int categoryId,
                                                       @Param("authorIds") List<Long> authorIds,
                                                       @Param("bookYears") List<Integer> bookYears);
+
+    @Query("from Book b where lower(b.bookName) like lower(:name)")
+    List<Book> getBookByBookNameLike(@Param("name") String name);
 }

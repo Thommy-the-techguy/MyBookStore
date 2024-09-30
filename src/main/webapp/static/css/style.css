@@ -27,6 +27,30 @@ header {
     width: 830px;
 }
 
+.header-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.search-button {
+    display: inline;
+    border: 1px solid #f7f7f7;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.search-button input {
+    border-radius: 5px;
+}
+
+.search-button:hover {
+    background-color: #f7f7f7;
+}
+
 .header-first-half {
     display: flex;
     flex-direction: row;

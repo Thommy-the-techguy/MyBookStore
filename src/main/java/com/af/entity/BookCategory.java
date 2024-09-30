@@ -28,6 +28,10 @@ public class BookCategory {
         this.category = category;
     }
 
+    public Category getCategory() {
+        return this.category;
+    }
+
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;

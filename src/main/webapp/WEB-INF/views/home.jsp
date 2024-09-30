@@ -14,7 +14,12 @@
     <header>
         <div class="header-first-half">
             <img src="${pageContext.request.contextPath}/static/images/logo/brandSchool.svg" height="70" width="120">
-            <input id="search-input" type="text" placeholder="Введите название товара">
+            <form class="header-form" method="post" action="${pageContext.request.contextPath}/books/search">
+                <input id="search-input" type="text" name="itemName" placeholder="Введите название товара">
+                <div class="search-button">
+                    <input type="image" src="${pageContext.request.contextPath}/static/images/common/search.png" alt="search" height="50" width="50">
+                </div>
+            </form>
             <div class="support-bar">
                 <div class="support-bar-inner">
                     <img src="${pageContext.request.contextPath}/static/images/help-icon.png" height="24" width="24">

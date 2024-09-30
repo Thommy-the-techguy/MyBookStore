@@ -107,6 +107,14 @@ public class HomeController {
         return returnRedirectURL(category, authorIds, yearIds);
     }
 
+    @PostMapping("/books/search")
+    public String searchItem(Model model, @RequestParam(name = "itemName") String itemName) {
+        List<Book> searchResult = bookRepo.getBookByBookNameLike("%" + itemName + "%");
+        model.asMap().put("searchResult", searchResult);
+
+        return "books-search";
+    }
+
     private String returnRedirectURL(String category, List<Long> authorIds, List<Integer> yearIds) {
         StringBuilder sb = new StringBuilder(String.format("redirect:/books?category=%s", category));
 
